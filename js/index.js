@@ -51,4 +51,5 @@ function Compile(el, instance) {
         }
         node.childNodes.forEach(child => fragment_compile(child));
     }
+    instance.$el.appendChild(fragment);
 }
