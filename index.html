@@ -9,12 +9,24 @@
 </head>
 
 <body>
-    <div id="root"></div>
+    <div id="root">
+        <ul>
+            <li>{{msg}}</li>
+        </ul>
+    </div>
 </body>
 <script src="./js/index.js"></script>
 <script>
     const vm = new Vue({
         el: "#root",
+        data: {
+            msg: "消息发送成功",
+            code: 200,
+            data: {
+                title: "百度",
+                url: "https://www.baidu.com"
+            }
+        }
     })
     console.log(vm);
 </script>
