@@ -1,6 +1,7 @@
 class Vue {
     constructor(instance) {
         this.$data = instance.data;
+        this.$methods = instance.methods;
         Observer(this.$data);
         Compile(instance.el, this);
     }
@@ -45,7 +46,7 @@ function Compile(el, instance) {
                     (total, current) => total[current], instance.$data
                 );
                 node.nodeValue = node.nodeValue.replace(pattern, value);
-                console.log(node.nodeValue);
+                // console.log(node.nodeValue);
             }
             return
         }

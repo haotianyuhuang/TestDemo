@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>测试</title>
 </head>
 
 <body>
@@ -15,6 +15,7 @@
             <li>{{msg}}</li>
             <li>{{data.title}}</li>
         </ul>
+        <button onclick="vm.$methods.show()">查询</button>
     </div>
 </body>
 <script src="./js/index.js"></script>
@@ -27,10 +28,16 @@
             data: {
                 title: "百度",
                 url: "https://www.baidu.com"
+            },
+        },
+        methods: {
+            show() {
+                const res = Object;
+                console.log(res);
             }
         }
     })
-    console.log(vm);
+    // console.log(vm.$methods.show());
 </script>
 
 </html>
