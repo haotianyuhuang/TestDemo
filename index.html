@@ -10,33 +10,9 @@
 
 <body>
     <div id="root">
-        <ul>
-            <li>{{code}}</li>
-            <li>{{msg}}</li>
-            <li>{{data.title}}</li>
-        </ul>
-        <button onclick="vm.$methods.show()">查询</button>
+        <canvas id="table" width="400" height="400"></canvas>
     </div>
 </body>
-<script src="./js/index.js"></script>
-<script>
-    const vm = new Vue({
-        el: "#root",
-        data: {
-            msg: "消息发送成功",
-            code: 200,
-            data: {
-                title: "百度",
-                url: "https://www.baidu.com"
-            },
-        },
-        methods: {
-            show() {
-                const res = Object;
-                console.log(res);
-            }
-        }
-    })
-</script>
+<script src="./js/draw.js"></script>
 
 </html>
